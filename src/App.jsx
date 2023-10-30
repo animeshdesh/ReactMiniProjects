@@ -2,6 +2,7 @@
 import { Container, Typography } from "@mui/material";
 import CountriesDisplay from "./Apps/CountriesDisplay";
 import Stopwatch from "./Apps/Stopwatch";
+import Calculator from "./Apps/Calculator";
 function App() {
   return (
     <>
@@ -12,7 +13,8 @@ function App() {
         <Typography variant="h4">Github</Typography>
       </Container> */}
       {/* <CountriesDisplay /> */}
-      <Stopwatch />
+      {/* <Stopwatch /> */}
+      <Calculator />
     </>
   );
 }
