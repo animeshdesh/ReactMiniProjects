@@ -3,6 +3,7 @@ import { Container, Typography } from "@mui/material";
 import CountriesDisplay from "./Apps/CountriesDisplay";
 import Stopwatch from "./Apps/Stopwatch";
 import Calculator from "./Apps/Calculator";
+import Countrysearch from "./Apps/Countrysearch";
 function App() {
   return (
     <>
@@ -14,7 +15,8 @@ function App() {
       </Container> */}
       {/* <CountriesDisplay /> */}
       {/* <Stopwatch /> */}
-      <Calculator />
+      {/* <Calculator /> */}
+      <Countrysearch />
     </>
   );
 }

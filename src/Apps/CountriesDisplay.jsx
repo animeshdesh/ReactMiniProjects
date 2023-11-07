@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, TextField, Typography } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
 const CountriesDisplay = () => {
   const URL = "https://restcountries.com/v3.1/all";
   const [Data, setData] = useState([]);
+  const [search, setSearch] = useState("");
   const getApiData = async () => {
     try {
       const response = await axios.get(URL);
@@ -26,6 +27,7 @@ const CountriesDisplay = () => {
           <Typography variant="h2">Countries</Typography>
         </Box>
         <Typography variant="h4">Total Countries : {Data.length}</Typography>
+
         <Grid container>
           {Data.map((country, index) => {
             return (
